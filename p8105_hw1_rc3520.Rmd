@@ -47,3 +47,16 @@ problem2_df = tibble(
 )
 view(problem2_df)
 ```
+
+## Calculate the mean of variables in the dataframe
+```{r calculate the mean of variable from problem2_df}
+nrom_mean = mean(pull(problem2_df, var = nrom))
+nrom_mean
+logi_vector_mean = mean(pull(problem2_df, var = logi_vector))
+logi_vector_mean
+char_vector_mean = mean(pull(problem2_df, var = char_vector))
+char_vector_mean
+fac_vector_mean = mean(pull(problem2_df, var = fac_vector))
+fac_vector_mean
+```
+Answer: _mean_ function only works on nrom and logical vector but doesn't work on character vector and vactor vector.

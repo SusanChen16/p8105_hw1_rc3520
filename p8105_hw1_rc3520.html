@@ -409,6 +409,27 @@ POSIXct date.</li>
 )
 view(problem2_df)</code></pre>
 </div>
+<div id="calculate-the-mean-of-variables-in-the-dataframe" class="section level2">
+<h2>Calculate the mean of variables in the dataframe</h2>
+<pre class="r"><code>nrom_mean = mean(pull(problem2_df, var = nrom))
+nrom_mean</code></pre>
+<pre><code>## [1] 0.4220373</code></pre>
+<pre class="r"><code>logi_vector_mean = mean(pull(problem2_df, var = logi_vector))
+logi_vector_mean</code></pre>
+<pre><code>## [1] 0.5</code></pre>
+<pre class="r"><code>char_vector_mean = mean(pull(problem2_df, var = char_vector))</code></pre>
+<pre><code>## Warning in mean.default(pull(problem2_df, var = char_vector)): argument is not
+## numeric or logical: returning NA</code></pre>
+<pre class="r"><code>char_vector_mean</code></pre>
+<pre><code>## [1] NA</code></pre>
+<pre class="r"><code>fac_vector_mean = mean(pull(problem2_df, var = fac_vector))</code></pre>
+<pre><code>## Warning in mean.default(pull(problem2_df, var = fac_vector)): argument is not
+## numeric or logical: returning NA</code></pre>
+<pre class="r"><code>fac_vector_mean</code></pre>
+<pre><code>## [1] NA</code></pre>
+<p>Answer: <em>mean</em> function only works on nrom and logical vector
+but doesn’t work on character vector and vactor vector.</p>
+</div>
 </div>
 
 
