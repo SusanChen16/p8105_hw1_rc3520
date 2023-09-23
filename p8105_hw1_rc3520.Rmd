@@ -27,6 +27,7 @@ ggplot(early_january_weather, aes(x = time_hour, y = temp, color=humid)) +
   ggtitle('Scatterplot of temp (y)  vs time_hour (x)') +
   xlab('time_hour') + ylab('temp(F)')
 ```
+Description: The temperature gradually increased from the beginning of Jan 2013 to the middle Jan 2013; temperature would be relatively higher where the humidity was lower.
 
 ## Export the scatterplot to project directory
 ```{r export scatterplot to project directory}
