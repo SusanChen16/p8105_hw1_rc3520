@@ -413,10 +413,10 @@ view(problem2_df)</code></pre>
 <h2>Calculate the mean of variables in the dataframe</h2>
 <pre class="r"><code>nrom_mean = mean(pull(problem2_df, var = nrom))
 nrom_mean</code></pre>
-<pre><code>## [1] 0.4173772</code></pre>
+<pre><code>## [1] -0.4246984</code></pre>
 <pre class="r"><code>logi_vector_mean = mean(pull(problem2_df, var = logi_vector))
 logi_vector_mean</code></pre>
-<pre><code>## [1] 0.8</code></pre>
+<pre><code>## [1] 0.3</code></pre>
 <pre class="r"><code>char_vector_mean = mean(pull(problem2_df, var = char_vector))</code></pre>
 <pre><code>## Warning in mean.default(pull(problem2_df, var = char_vector)): argument is not
 ## numeric or logical: returning NA</code></pre>
@@ -439,7 +439,11 @@ convert_char_vector = as.numeric(pull(problem2_df, var = char_vector))
 convert_char_vector
 convert_fac_vector = as.numeric(pull(problem2_df, var = fac_vector))
 convert_fac_vector</code></pre>
-<p>```</p>
+<p>Answer: Applying the as.numeric function to the logical and factor
+variables is successful; however, it doesn’t work successfully on
+character vector, showing that characters cannot be converted into
+numbers. And logical and factor variables can be converted into numbers
+and be used in other calculations.</p>
 </div>
 </div>
 
