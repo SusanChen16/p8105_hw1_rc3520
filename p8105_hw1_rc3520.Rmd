@@ -1,0 +1,10 @@
+---
+title: "p8105_hw1_rc3520"
+author: "Ruyi Chen"
+date: "2023-09-23"
+output: html_document
+---
+```{r}
+
+```
+
