@@ -49,7 +49,7 @@ view(problem2_df)
 ```
 
 ## Calculate the mean of variables in the dataframe
-```{r calculate the mean of variable from problem2_df}
+```{r}
 nrom_mean = mean(pull(problem2_df, var = nrom))
 nrom_mean
 logi_vector_mean = mean(pull(problem2_df, var = logi_vector))
@@ -59,4 +59,18 @@ char_vector_mean
 fac_vector_mean = mean(pull(problem2_df, var = fac_vector))
 fac_vector_mean
 ```
-Answer: _mean_ function only works on nrom and logical vector but doesn't work on character vector and vactor vector.
+Answer: _mean_ function only works on nrom and logical vector but doesn't work on character vector and factor vector.
+
+## Apply the as.numeric function to the logical, character, and factor variables 
+```{r eval = FALSE}
+convert_logi_vector = as.numeric(pull(problem2_df, var = logi_vector))
+convert_logi_vector
+convert_char_vector = as.numeric(pull(problem2_df, var = char_vector))
+convert_char_vector
+convert_fac_vector = as.numeric(pull(problem2_df, var = fac_vector))
+convert_fac_vector
+```
+
+
+```
+
