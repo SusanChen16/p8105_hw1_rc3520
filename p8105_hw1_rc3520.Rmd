@@ -33,3 +33,17 @@ ggplot(early_january_weather, aes(x = hour, y = temp, color=humid)) +
 ```{r export scatterplot to project directory}
 ggsave("Scatterplot of temp vs time_hour.pdf")
 ```
+
+
+# Problem 2
+
+## Create a data frame 
+```{r create a data frame}
+problem2_df = tibble(
+  nrom = rnorm(10, mean = 0, sd = 1),
+  logi_vector = nrom > 0,
+  char_vector = c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j"),
+  fac_vector = factor(c("High", "Medium", "Low", "High", "High", "High", "Low", "Low", "Low", "Medium"))
+)
+view(problem2_df)
+```
