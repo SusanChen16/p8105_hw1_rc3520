@@ -22,15 +22,15 @@ data("early_january_weather")
 
 ##Make a scatterplot of temp (y) vs time_hour (x)
 ```{r Make a scatterplot of temp (y) vs time_hour (x)}
-ggplot(early_january_weather, aes(x = hour, y = temp, color=humid)) + 
+ggplot(early_january_weather, aes(x = time_hour, y = temp, color=humid)) + 
   geom_point() + 
   ggtitle('Scatterplot of temp (y)  vs time_hour (x)') +
-  xlab('time_hour ') + ylab('temp(F)')
+  xlab('time_hour') + ylab('temp(F)')
 ```
 
 ## Export the scatterplot to project directory
 ```{r export scatterplot to project directory}
-ggsave("Scatterplot of temp vs time_hour.pdf")
+ggsave("Scatterplot of temp(y) vs time_hour(x).pdf")
 ```
 
 
