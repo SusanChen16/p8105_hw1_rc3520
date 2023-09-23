@@ -27,8 +27,9 @@ ggplot(early_january_weather, aes(x = hour, y = temp, color=humid)) +
   geom_point() + 
   ggtitle('Scatterplot of temp (y)  vs time_hour (x)') +
   xlab('time_hour ') + ylab('temp(F)')
-
-ggsave("Scatterplot of temp vs time_hour.pdf")
 ```
 
-
+## Export the scatterplot to project directory
+```{r export scatterplot to project directory}
+ggsave("Scatterplot of temp vs time_hour.pdf")
+```
